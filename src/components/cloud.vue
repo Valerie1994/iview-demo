@@ -1,19 +1,20 @@
 <template>
-  <div id="app">
-    <h1>{{ msg }}</h1>
+  <div id="firstcomponent">
+    <h1>I am a title.</h1>
+    <a> written by {{ author }} </a>
   </div>
 </template>
 
-<script>
+<script type="text/javascript">
   export default {
-    data(){
-      return{
-        msg:'丑磊'
+    data () {
+      return {
+        author: "你是猪吗"
       }
     }
   }
 </script>
 
-<style scoped>
-
+<style>
 </style>
+
