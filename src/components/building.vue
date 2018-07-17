@@ -8,7 +8,8 @@
     <!--<DatePicker type="date" :value="time" placeholder="选择日期" style="width: 200px"></DatePicker>-->
     <!-- 滑块组件 -->
     <Slider v-model="value1"></Slider>
-    <Slider v-model="value2" range></Slider>
+    <!-- :step 一次移动的最小单位 -->
+    <Slider v-model="value2" :step="10" range></Slider>
     <Slider v-model="value3" range disabled></Slider>
   </div>
 </template>
