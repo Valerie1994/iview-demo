@@ -31,5 +31,7 @@ export default {
 </script>
 
 <style scoped>
-
+  h3{
+    cursor: pointer;
+  }
 </style>
