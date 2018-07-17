@@ -4,11 +4,11 @@
     <ul>
       <li>
         <router-link :to="{ name: 'building' }">goBuilding</router-link>
-        <!--这种是根据name跳转-->
+        <!-- 这种是根据name跳转 -->
       </li>
       <li>
         <router-link :to="{ path: '/cloud' }">goCloud</router-link>
-        <!--这种是根据path跳转-->
+        <!-- 这种是根据path跳转 -->
       </li>
     </ul>
   </div>
