@@ -1,9 +1,8 @@
 <template>
   <div>
     <!-- back是在调用下面定义好的一个方法 -->
-    <h3 @click="back">返回首页①使用函数</h3>
-    <router-link class="linkToIndex" :to="{ path:'/' }">返回首页②使用链接</router-link>
-    <br/>
+    <h3 @click="back">返回首页方法① 使用函数</h3>
+    <router-link class="linkToIndex" :to="{ path:'/' }">返回首页方法② 使用链接</router-link>
     <RadioGroup id="phone">
       <Radio label="apple">
         <Icon type="social-apple"></Icon>
@@ -40,6 +39,10 @@
     margin-bottom: 10px;
   }
   .linkToIndex{
-
+    display: block;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    line-height: 1.5;
+    font-size: 12px;
   }
 </style>
