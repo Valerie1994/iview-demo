@@ -10,6 +10,10 @@
         <router-link :to="{ path: '/cloud' }">goCloud</router-link>
         <!-- 这种是根据path跳转 -->
       </li>
+      <li>
+        <router-link :to="{ path: '/test' }">goTest</router-link>
+        <!-- 这种是根据path跳转 -->
+      </li>
     </ul>
   </div>
 </template>

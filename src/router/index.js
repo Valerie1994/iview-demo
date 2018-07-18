@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import building from '@/components/building'
 import cloud from '@/components/cloud'
+import test from '@/pages/test'
 Vue.use(Router)
 
 export default new Router({
@@ -21,6 +22,11 @@ export default new Router({
       path: '/cloud',
       name: 'cloud',
       component: cloud
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: test
     }
   ]
 })

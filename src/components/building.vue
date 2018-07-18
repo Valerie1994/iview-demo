@@ -7,10 +7,10 @@
     <!-- 日期组件 -->
     <!--<DatePicker type="date" :value="time" placeholder="选择日期" style="width: 200px"></DatePicker>-->
     <!-- 滑块组件 -->
-    <Slider v-model="value1"></Slider>
+    <Slider v-model="sliderValue.value1"></Slider>
     <!-- :step 一次移动的最小单位 -->
-    <Slider v-model="value2" :step="10" range></Slider>
-    <Slider v-model="value3" range disabled></Slider>
+    <Slider v-model="sliderValue.value2" :step="10" range></Slider>
+    <Slider v-model="sliderValue.value3" range disabled></Slider>
   </div>
 </template>
 
@@ -28,14 +28,16 @@ export default {
   data () {
     return {
       author: 'building',
-      value1: 25,
-      value2: [20, 50],
-      value3: [20, 50]
+      sliderValue:{
+        value1: 25,
+        value2: [20, 50],
+        value3: [20, 50]
+      }
     }
   },
   /*
   //使用日期组件时打印的
-  mounted () {
+  mounted () {  //
     console.log(this.time)
   },*/
   methods: {
