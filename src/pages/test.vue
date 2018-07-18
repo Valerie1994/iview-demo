@@ -4,20 +4,21 @@
     <h3 @click="back">返回首页方法① 使用函数</h3>
     <router-link class="linkToIndex" :to="{ path:'/' }">返回首页方法② 使用链接</router-link>
     <RadioGroup id="phone" v-model="systemType">
-      <Radio label="apple" :value="apple">
+      <!-- value前面加不加冒号都可以打印，只是加了冒号，页面加载出来时会报错 -->
+      <Radio label="apple" value="apple">
         <Icon type="social-apple"></Icon>
         <span>Apple</span>
       </Radio>
-      <Radio label="android" :value="android">
+      <Radio label="android" value="android">
         <Icon type="social-android"></Icon>
         <span>Android</span>
       </Radio>
-      <Radio label="windows" :value="windows">
+      <Radio label="windows" value="windows">
         <Icon type="social-windows"></Icon>
         <span>Windows</span>
       </Radio>
     </RadioGroup>
-    <button type="button" @click="testSubmit">打印选中的系统</button>
+    <i-button type="primary" @click="testSubmit">提交</i-button>
   </div>
 </template>
 
